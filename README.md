@@ -10,8 +10,10 @@ A backend API for a property listing platform built with **Node.js**, **TypeScri
 
 * 🔐 JWT-based User Authentication
 * 🏘 Property Listing with Pagination and Filtering
-* ✅ Property Recommendations
+* ⭐Favourite Property
+* 🏠 Property Recommendations
 * 📂 Redis Caching for Optimized Property Search
+* ✅ ZOD input validation
 * 📄 RESTful API Design
 
 ---
