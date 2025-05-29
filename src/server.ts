@@ -17,6 +17,9 @@ const corsOption={
 app.use(cors(corsOption));
 
 connectDb(); //connect mongo Database
+app.use("/api/health",(req,res)=>{
+    res.send("AWESOME!")
+})
 app.use("/api",userRoutes);
 app.use("/api",propertyRoutes);
 const PORT=process.env.PORT;
