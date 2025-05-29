@@ -172,14 +172,14 @@ curl -H "Authorization: Bearer your_token_here" http://localhost:5000/api/proper
   "password": "strongpassword"
 }
 ```
-### Add property to favourites
+### Add property to favourites [protected route]
 
 ```json
 {
 "propertyId":"68347b7ce0fee5f6ce42c293"
 }
 ```
-### Recommend a Property
+### Recommend a Property [protected route]
 
 ```json
 {
