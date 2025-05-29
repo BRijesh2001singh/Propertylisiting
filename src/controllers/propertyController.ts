@@ -136,6 +136,12 @@ export const updateProperty=async(req:Request,res:Response):Promise<void>=>{
         res.status(403).json({message:"Unauthorized"});
         return;
       }
+      //remove the previous cached data from redis after update 
+      const key=req.originalUrl;
+      const cachedData=await redisClient.get(key);
+      if(cachedData){
+       await redisClient.del(key);
+      }
       Object.assign(propertyData,req.body);
       await propertyData.save();
       res.status(200).json({message:"Propery Details updated"});
@@ -160,6 +166,12 @@ try {
          res.status(403).json({message:"Unauthorized"});
          return;
        }
+         //remove the previous cached data from redis after update 
+      const key=req.originalUrl;
+      const cachedData=await redisClient.get(key);
+      if(cachedData){
+       await redisClient.del(key);
+      }
        await Property.deleteOne({id:propertyId});
        res.status(200).json({message:"Propery Details deleted"});
 } catch (error) {

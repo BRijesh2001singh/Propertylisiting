@@ -10,7 +10,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 const corsOption={
-    origin:"*",
+    origin:"*",  //allow all origin ONLY FOR DEV ENVIORNMENT
     method:["GET","PUT","POST","DELETE"],
     credentials:true
 }
