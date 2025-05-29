@@ -3,6 +3,8 @@
 A backend API for a property listing platform built with **Node.js**, **TypeScript**, **Express**, and **MongoDB**. It supports user authentication, property management, recommendations, and uses Redis for caching.
 
 ---
+### Demo
+[CEHCK OUT PROPERTY LISTING LIVE API](https://propertylisiting.onrender.com/api/properties)
 
 ## Features
 
@@ -125,8 +127,9 @@ GET /api/properties?city=Delhi&listingType=Rent&minPrice=10000&maxPrice=30000&pa
 
 | Method | Endpoint         | Description                    |
 | ------ | ---------------- | ------------------------------ |
-| POST   | `/api/recommend` | Recommend a property to a user |
-| DELETE | `/api/recommend` | Remove a recommended property  |
+| GET   | `api/recommend/property` | View all recommended property |
+| POST   | `api/recommend/property` | Recommend a property to another user |
+| DELETE | `api/recommend/property` | Remove a recommended property  |
 
 ---
 
