@@ -2,9 +2,6 @@ import { Property } from "../models/propertyModel";
 import { Request,Response } from "express";
 import { User } from "../models/userModel";
 import redisClient from "../connection/redisConnection";
-import { boolean } from "zod";
-
-
 //get property by id
 export const getPropertyById=async(req:Request,res:Response):Promise<void>=>{
 try {
