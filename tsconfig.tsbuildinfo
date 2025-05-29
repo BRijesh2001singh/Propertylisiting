@@ -1,1 +1,1 @@
-{"root":["./src/server.ts"],"version":"5.8.3"}
+{"root":["./src/server.ts","./src/connection/dbconnection.ts","./src/connection/redisconnection.ts","./src/controllers/propertycontroller.ts","./src/controllers/usercontroller.ts","./src/middleware/rediscache.ts","./src/middleware/verifyauth.ts","./src/models/propertymodel.ts","./src/models/usermodel.ts","./src/routes/propertyroutes.ts","./src/routes/userroutes.ts","./src/types/filter.ts","./src/types/listing.ts","./src/types/express/index.d.ts","./src/utils/jwtokengenerator.ts"],"version":"5.8.3"}
